@@ -55,6 +55,10 @@
             padding: 10px;
             margin-bottom: 10px;
         }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
         form input[type="submit"] {
             background-color: #0072C6;
             color: #FFFFFF;
@@ -82,8 +86,10 @@
         &copy; 2022 Samsung. All rights reserved.
     </footer>
     <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
         <input type="submit" value="Submit">
     </form>
     <script>
